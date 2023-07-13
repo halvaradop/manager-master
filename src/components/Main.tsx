@@ -50,7 +50,7 @@ const Main = () => {
                         Manage makes it simple for software teams to plan day-to-day tasks while
                         keeping the larger team goals in view.
                     </p>
-                    <Button className="hover:opacity-60" children="Get Started" size="baseFull" color="red-100" />
+                    <Button className="hover:opacity-60" children="Get Started" size="baseFull" color="red" />
                 </article>
             </section>
             <section className="base:w-10/12 base:mx-auto base:grid base:grid-cols-2 base:gap-x-10">
@@ -69,7 +69,7 @@ const Main = () => {
                     </section>
                 </div>
             </section>
-            <section className="w-11/12 mx-auto mb-14 text-center base:mb-28">
+            <section className="w-11/12 mx-auto mb-14 text-center base:w-10/12 base:mb-28">
                 <h1 className="mt-24 mb-10 text-blue-100 text-4xl font-bold">What they've said</h1>
                 <div className="w-full py-10 overflow-x-hidden base:overflow-x-scroll base:snap-mandatory base:snap-x scroll-comment">
                     <div className="flex gap-x-[5%] transition-all duration-500" ref={carouselContainer}>
@@ -81,12 +81,12 @@ const Main = () => {
                 <div className="flex items-center justify-center gap-x-2 base:hidden">
                     {comments.map((_, key) => <span className="p-1 block border border-red rounded-full" key={key} ref={node => mappingNodeRef(node, key)} onClick={() => handleComment(key)}></span>)}
                 </div>
-                <Button className="mt-10 base:mt-12 hover:opacity-60" children="Get Started" size="baseFull" color="red-100" />
+                <Button className="mt-10 base:mt-12 hover:opacity-60" children="Get Started" size="baseFull" color="red" />
             </section>
             <section className="w-full py-16 text-center bg-red sm:py-20">
                 <article className="w-11/12 mx-auto base:w-10/12 base:flex base:items-center base:justify-between">
                     <h2 className="max-w-sm mx-auto mb-5 text-white text-4xl font-bold sm:mb-7 base:m-0 base:text-start">Simplify how your team works today.</h2>
-                    <Button className="hover:opacity-90" children="Get Started" size="baseFull" color="white-100" />
+                    <Button className="hover:opacity-90" children="Get Started" size="baseFull" color="white" />
                 </article>
             </section>
         </main>

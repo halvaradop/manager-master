@@ -5,7 +5,7 @@ import { VariantContext } from "../contexts/VariantContext"
 const ManageCard = ({ manage }: ManageCardProps) => {
     const { id, title, content } = manage
     const { colorVariants, sizeVariants } = useContext(VariantContext)
-    const classId = `${sizeVariants["baseFull"]} ${colorVariants["red-100"]} grid place-content-center`
+    const classId = `${sizeVariants["baseFull"]} ${colorVariants["red"]} grid place-content-center`
 
     return (
         <article className="flex flex-col relative">
