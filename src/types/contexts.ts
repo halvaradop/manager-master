@@ -1,6 +1,7 @@
 
 export interface UnorderedListContextType {
-    classUnordered: Record <string, string>
+    classUnordered: Record <string, string>,
+    classUnorderedColor: Record <string, string>
 }
 
 export interface VariantContextType {
