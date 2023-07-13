@@ -8,3 +8,15 @@
         font-family: 'Be Vietnam Pro', sans-serif;
     }
 }
+
+@layer utilities {
+    .scroll-comment::-webkit-scrollbar {
+        height: 0.35rem;
+        background-color: hsl(13, 100%, 96%);
+    }
+
+    .scroll-comment::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: hsl(12, 88%, 59%);
+    }
+}
