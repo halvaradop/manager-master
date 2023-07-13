@@ -3,6 +3,7 @@ import { InputHTMLAttributes, ButtonHTMLAttributes } from "react"
 import { Comment, Manage } from "./types";
 
 export interface InputProps extends Omit<InputHTMLAttributes <HTMLInputElement>, "size"> {
+    color: string,
     size: string
 }
 

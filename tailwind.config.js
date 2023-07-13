@@ -23,6 +23,9 @@ export default {
       "-4": "-400%",
     },
     extend: {
+      screens: {
+        base: '900px'
+      },
       colors: {
         gray: 'hsl(0, 0%, 98%)',
         red: {
