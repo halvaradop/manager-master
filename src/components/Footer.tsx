@@ -24,10 +24,10 @@ const Footer = () => {
             <section className="w-11/12 mx-auto py-14 flex items-center flex-col gap-10 base:w-10/12 base:py-12 base:grid base:grid-cols-[auto_1fr_1fr] base:gap-x-5">
                 <form className="w-full max-w-md mb-5 flex items-center justify-center gap-x-3 base:col-start-3" onSubmit={handleSubmit}>
                     <label className="w-full relative" htmlFor="email">
-                        <Input className="peer w-full" type="email" value={email} color="blue-100" size="baseFull2" name="email" placeholder="Updates in your inbox..." onChange={handleChange} />
+                        <Input className="peer w-full" type="email" value={email} color="blue" size="baseFull2" name="email" placeholder="Updates in your inbox..." onChange={handleChange} />
                         <span className="block text-red text-xs italic font-thin invisible absolute -bottom-6 left-4 peer-invalid:visible">Please insert a valid email</span>
                     </label>
-                    <Input className="hover:cursor-pointer" type="submit" value="Go" color="red-100" size="baseFull" />
+                    <Input className="hover:cursor-pointer" type="submit" value="Go" color="red" size="baseFull" />
                 </form>
                 <article className="w-full grid grid-cols-2 justify-items-center base:gap-x-5 base:col-start-2 base:row-start-1 base:row-span-2">
                     <UnorderedList classItem="hover:text-red" variant="flex-100" color="white" listItems={footerAbout} />
