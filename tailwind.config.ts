@@ -59,7 +59,7 @@ export default {
         }
       },
         {
-          values: theme("move"),
+          values: theme("move")
         }
       ),
       matchUtilities({
