@@ -9,7 +9,7 @@ const ManageCard = ({ manage }: ManageCardProps) => {
 
     return (
         <article className="flex flex-col relative">
-            <div className="w-[110%] absolute rounded-l-full bg-red-100">
+            <div className="w-[110%] absolute rounded-l-full bg-red-100 base:bg-transparent">
                 <div className="w-[90%] flex items-center justify-start gap-x-5">
                     <span className={classId}>{id}</span>
                     <h2 className="text-blue-100 text-lg font-bold line-clamp-1">{title}</h2>
