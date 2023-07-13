@@ -9,7 +9,7 @@ export interface InputProps extends Omit<InputHTMLAttributes <HTMLInputElement>,
 
 export interface UnorderedListProps {
     className?: string,
-    classItem: string,
+    classItem?: string,
     variant: string,
     color: string,
     listItems: string[],
