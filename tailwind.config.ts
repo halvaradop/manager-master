@@ -41,7 +41,8 @@ export default {
     },
   },
   plugins: [
-    plugin(({ matchVariant, matchUtilities, theme }) => {
+    plugin(({ addVariant, matchVariant, matchUtilities, theme }) => {
+      addVariant('foinval', '&:focus:invalid'),
       matchVariant("nth", (value) => {
         return `&:nth-child(${value})`
       },
