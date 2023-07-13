@@ -1,3 +1,5 @@
+import plugin from 'tailwindcss/plugin'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
@@ -6,6 +8,20 @@ export default {
     hoverOnlyWhenSupported: true
   },
   theme: {
+    move: {
+      "1": "100%",
+      "2": "200%",
+      "3": "300%",
+      "4": "400%",
+
+    },
+    "-move": {
+      "-0": "0",
+      "-1": "-100%",
+      "-2": "-200%",
+      "-3": "-300%",
+      "-4": "-400%",
+    },
     extend: {
       colors: {
         gray: 'hsl(0, 0%, 98%)',
@@ -21,6 +37,38 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ matchVariant, matchUtilities, theme }) => {
+      matchVariant("nth", (value) => {
+        return `&:nth-child(${value})`
+      },
+        {
+          values: {
+            1: "1",
+            2: "2",
+            3: "3"
+          },
+        }
+      ),
+      matchUtilities({
+        "move": (value) => {
+          return { translate: value }
+        }
+      },
+        {
+          values: theme("move")
+        }
+      ),
+      matchUtilities({
+        "move": (value) => {
+          return { translate: value }
+        }
+      },
+        {
+          values: theme("-move")
+        }
+      )
+    }),
+  ],
 }
 
