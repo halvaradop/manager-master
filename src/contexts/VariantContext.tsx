@@ -11,7 +11,7 @@ const sizeVariants: Record <string, string> = {
 const colorVariants: Record <string, string> = {
     "red-100": "text-white border-red shadow-sm shadow-red bg-red",
     "white-100": "text-red border-white bg-white shadow-sm shadow-neutral-200",
-    "blue-100": "text-blue indent-4 placeholder-blue border-transparent"
+    "blue-100": "text-blue indent-4 placeholder-blue border-transparent foinval:border-red foinval:ring-1 foinval:ring-red foinval:text-red invalid:text-red invalid:border-red"
 }
 
 const VariantContext = createContext <VariantContextType> ({
